@@ -63,7 +63,7 @@ describe('UIReferenceScreen', () => {
 
     expect(toggle.props.value).toBe(false);
     fireEvent(toggle, 'valueChange', true);
-    expect(toggle.props.value).toBe(true); // Note: this doesn't update unless you use useState + re-render
+    expect(toggle.props.value).toBe(true);
   });
 
   it('handles chip selection', () => {
@@ -91,7 +91,6 @@ describe('UIReferenceScreen', () => {
     const { getByText, queryByText } = render(<UIReferenceScreen />);
     const toggle = getByText('This is a sample accordion case?');
 
-    // Initially hidden
     expect(queryByText('This is sample content for accordion')).toBeNull();
 
     fireEvent.press(toggle);

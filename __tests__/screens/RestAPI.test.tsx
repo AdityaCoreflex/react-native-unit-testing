@@ -15,7 +15,7 @@ describe('APIRefrenceScreen', () => {
 
     const { getByTestId, queryByTestId } = render(<APIRefrenceScreen />);
 
-    expect(getByTestId('loader')).toBeTruthy(); // loader should show
+    expect(getByTestId('loader')).toBeTruthy();
 
     await waitFor(
       () => {

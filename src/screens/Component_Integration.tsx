@@ -1,16 +1,5 @@
 import React, { useState } from 'react';
-import {
-  View,
-  Text,
-  TextInput,
-  TouchableOpacity,
-  Modal,
-  Switch,
-  StyleSheet,
-  Pressable,
-  Alert,
-  //   Button,
-} from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet, Alert } from 'react-native';
 import Button from '../components/Button';
 import TextField from '../components/TextField';
 import Accordion from '../components/Accordian';
@@ -44,13 +33,6 @@ const UIReferenceScreen = () => {
       />
 
       {/* Text Field */}
-      {/* <TextInput
-        testID="text-input"
-        style={styles.input}
-        placeholder="Enter text"
-        value={inputValue}
-        onChangeText={setInputValue}
-      /> */}
       <TextField placeholder="Email" keyboardType="email-address" />
       <TextField placeholder="Password" secureTextEntry />
       <TextField
