@@ -11,21 +11,7 @@ This project is a demonstration of building modular UI components in React Nativ
 - REST API integration using Axios
 - Unit test coverage for all components and screens
 
-## Folder Structure
-
-src/
-├── components/ # All UI components (Button, Modal, etc.)
-├── context/ # Context API files
-├── customHooks/ # Custom hooks like useToggle
-├── reduxStore/ # Redux Toolkit store and slices
-├── screens/ # Screens integrating components
-└── utils/ # Static data
-
-**tests**/
-├── components/ # Component-level test cases
-└── screens/ # Screen-level and integration tests
-
-## Components Covered
+## ✅ Components Covered
 
 - Button
 - TextField (with keyboard and password support)
@@ -35,7 +21,7 @@ src/
 - Card
 - Modal
 
-## Test Cases Covered
+## 🧪 Test Cases Covered
 
 - Rendering and visibility of components
 - Button press events
@@ -49,16 +35,15 @@ src/
 - API call mocking (Axios)
 - Custom hook (`useToggle`) state behavior
 
-## Running Tests
+## 🚀 Running Tests
 
+```bash
 # Run all test suites
-
 npm test
 
 # Run a specific test file
-
-npx jest **tests**/components/Button.test.tsx
+npx jest __tests__/components/Button.test.tsx
 
 # Run tests by name
-
 npx jest -t "Accordion"
+```
