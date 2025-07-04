@@ -45,7 +45,7 @@ We use:
 
 ---
 
-## Jest Concepts & Functions
+## Jest Concepts & Functions ( You can also refer https://devhints.io/jest)
 
 | Term / Function                                   | Purpose                                            |
 | ------------------------------------------------- | -------------------------------------------------- |
