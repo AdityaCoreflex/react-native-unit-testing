@@ -1,4 +1,3 @@
-// __tests__/Card.test.tsx
 import React from 'react';
 import { render } from '@testing-library/react-native';
 import Card from '../../src/components/Card';
