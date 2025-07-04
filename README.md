@@ -11,7 +11,7 @@ This project is a demonstration of building modular UI components in React Nativ
 - REST API integration using Axios
 - Unit test coverage for all components and screens
 
-## ✅ Components Covered
+## Components Covered
 
 - Button
 - TextField (with keyboard and password support)
@@ -21,7 +21,7 @@ This project is a demonstration of building modular UI components in React Nativ
 - Card
 - Modal
 
-## 🧪 Test Cases Covered
+## Test Cases Covered
 
 - Rendering and visibility of components
 - Button press events
@@ -35,7 +35,7 @@ This project is a demonstration of building modular UI components in React Nativ
 - API call mocking (Axios)
 - Custom hook (`useToggle`) state behavior
 
-## 🚀 Running Tests
+## Running Tests
 
 ```bash
 # Run all test suites
