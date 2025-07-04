@@ -1,4 +1,3 @@
-// __tests__/ToggleSwitch.test.tsx
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react-native';
 import ToggleSwitch from '../../src/components/ToggleSwitch';

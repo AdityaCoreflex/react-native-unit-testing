@@ -1,4 +1,3 @@
-// __tests__/TextField.test.tsx
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react-native';
 import TextField from '../../src/components/TextField';
