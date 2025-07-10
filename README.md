@@ -117,6 +117,42 @@ We use:
 - API call mocking (Axios)
 - Custom hook (`useToggle`) state behavior
 
+## Snapshot Test Coverage
+
+Snapshot tests are used to capture and validate the UI structure of components across different states. This ensures the UI does not change unexpectedly during development or refactoring.
+
+---
+
+### LoginScreen
+
+| Scenario                            | Description                                             |
+| ----------------------------------- | ------------------------------------------------------- |
+| `default`                           | Initial render with empty input fields                  |
+| `after entering email and password` | Inputs are filled, no error or navigation triggered     |
+| `with invalid credentials`          | Displays error message for invalid login attempt        |
+| `after pressing Theme button`       | Snapshot taken after triggering Theme screen navigation |
+
+---
+
+### Accordion Component
+
+| Scenario                               | Description                                       |
+| -------------------------------------- | ------------------------------------------------- |
+| `initially closed`                     | Renders only the accordion header                 |
+| `after opening`                        | Displays both the header and the expanded content |
+| `after toggling open and closed again` | Content is hidden again; back to initial state    |
+
+---
+
+### Button Component
+
+| Scenario               | Description                                            |
+| ---------------------- | ------------------------------------------------------ |
+| `default`              | Renders the default button with basic props            |
+| `disabled`             | Renders the button in a disabled state                 |
+| `with loading`         | Renders a loader/spinner if loading state is active    |
+| `with onPress handler` | Confirms snapshot does not change with functional prop |
+
 ## Test Coverage Summary
 
 | Metric         | Percentage | Description                                   |
