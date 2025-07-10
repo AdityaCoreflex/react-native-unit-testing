@@ -8,6 +8,8 @@ const setup = () =>
   render(<LoginScreen navigation={{ navigate: mockNavigate }} />);
 
 describe('LoginScreen', () => {
+  // Functional and UI testing
+
   it('renders all input fields and button', () => {
     const { getByPlaceholderText, getByLabelText } = setup();
     expect(getByPlaceholderText('Email')).toBeTruthy();
@@ -35,6 +37,8 @@ describe('LoginScreen', () => {
 
     expect(mockPush).toHaveBeenCalledWith('Home');
   });
+
+  // Snapshot test cases
 
   it('matches snapshot (default state)', () => {
     const tree = render(<LoginScreen navigation={{ push: mockPush }} />);

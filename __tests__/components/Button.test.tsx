@@ -20,4 +20,14 @@ describe('Button Component', () => {
     fireEvent.press(getByTestId('sample-button'));
     expect(mockFn).toHaveBeenCalledTimes(1);
   });
+  it('default snapshot testing', () => {
+    const tree = render(<Button />);
+    expect(tree.toJSON()).toMatchSnapshot();
+  });
+  it('matches snapshot after clicking', () => {
+    const mockFn = jest.fn();
+    const { getByTestId, toJSON } = render(<Button onPress={mockFn} />);
+    fireEvent.press(getByTestId('sample-button'));
+    expect(toJSON()).toMatchSnapshot();
+  });
 });

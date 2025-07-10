@@ -50,4 +50,21 @@ describe('Accordion Component', () => {
     expect(queryByTestId('acc1-content')).toBeTruthy();
     expect(queryByTestId('acc2-content')).toBeTruthy();
   });
+  it('matches snapshot (initially closed)', () => {
+    const { toJSON } = render(<Accordion {...props} />);
+    expect(toJSON()).toMatchSnapshot();
+  });
+
+  it('matches snapshot after opening content', () => {
+    const { getByTestId, toJSON } = render(<Accordion {...props} />);
+    fireEvent.press(getByTestId('accordion-toggle'));
+    expect(toJSON()).toMatchSnapshot();
+  });
+
+  it('matches snapshot after toggling open and closed', () => {
+    const { getByTestId, toJSON } = render(<Accordion {...props} />);
+    fireEvent.press(getByTestId('accordion-toggle'));
+    fireEvent.press(getByTestId('accordion-toggle'));
+    expect(toJSON()).toMatchSnapshot();
+  });
 });
