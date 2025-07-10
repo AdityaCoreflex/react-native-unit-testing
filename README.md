@@ -117,6 +117,42 @@ We use:
 - API call mocking (Axios)
 - Custom hook (`useToggle`) state behavior
 
+## Test Coverage Summary
+
+| Metric         | Percentage | Description                                   |
+| -------------- | ---------- | --------------------------------------------- |
+| **Statements** | 95.23%     | % of all executable code covered by tests     |
+| **Branches**   | 97.36%     | % of all conditional branches (if/else, etc.) |
+| **Functions**  | 86.04%     | % of all declared functions covered           |
+| **Lines**      | 95%        | % of code lines executed during tests         |
+
+---
+
+## File-wise Coverage Details
+
+| File                               | % Stmts   | % Branch  | % Funcs   | % Lines | Uncovered Lines |
+| ---------------------------------- | --------- | --------- | --------- | ------- | --------------- |
+| **All files**                      | **95.23** | **97.36** | **86.04** | **95**  |                 |
+| components/Accordian.tsx           | 100       | 100       | 100       | 100     |                 |
+| components/Button.tsx              | 75        | 100       | 50        | 75      | 14              |
+| components/Card.tsx                | 100       | 100       | 100       | 100     |                 |
+| components/Chip.tsx                | 100       | 100       | 100       | 100     |                 |
+| components/Modal.tsx               | 100       | 100       | 100       | 100     |                 |
+| components/TextField.tsx           | 100       | 100       | 100       | 100     |                 |
+| components/ToggleSwitch.tsx        | 100       | 100       | 100       | 100     |                 |
+| context/ThemeContext.tsx           | 100       | 50        | 80        | 100     | 9               |
+| customHooks/useToggle.ts           | 100       | 100       | 100       | 100     |                 |
+| reduxStore/counterSlice.ts         | 100       | 100       | 100       | 100     |                 |
+| screens/HomeScreen.tsx             | 100       | 100       | 100       | 100     |                 |
+| screens/LoginScreen.tsx            | 86.66     | 100       | 60        | 86.66   | 57–62           |
+| screens/Redux_Integration.tsx      | 100       | 100       | 100       | 100     |                 |
+| screens/RestAPI_Integration.tsx    | 100       | 100       | 100       | 100     |                 |
+| screens/CustomHook_Integration.tsx | 100       | 100       | 100       | 100     |                 |
+| screens/ContextAPI_Integration.tsx | 100       | 100       | 100       | 100     |                 |
+| screens/Component_Integration.tsx  | 85.71     | 100       | 71.42     | 85.71   | 26–31           |
+
+---
+
 ## Running Tests
 
 ```bash
